@@ -47,6 +47,7 @@ public class Conta implements IConta{
     @Override
     public String toString() {
         return "Conta{" +
+                "Tipo=" + this.getClass().getSimpleName() +
                 "agencia=" + agencia +
                 ", numero=" + numero +
                 ", nome=" + nome +

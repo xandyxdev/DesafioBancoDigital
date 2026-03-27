@@ -4,27 +4,18 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Banco {
-    private List<Conta> contaCorrente;
-    private List<Conta> contaPoupanca;
+    private List<Conta> contas;
 
     public Banco() {
-        this.contaCorrente = new ArrayList<>();
-        this.contaPoupanca = new ArrayList<>();
+        this.contas= new ArrayList<>();
+
     }
 
-    public void adicionarContaCorrente(Conta conta) {
-        contaCorrente.add(conta);
+    public void adicionarConta(Conta conta) {
+        contas.add(conta);
     }
 
-    public void adicionarPoupanca(Conta conta) {
-        contaPoupanca.add(conta);
-    }
-
-    public List<Conta> getContaCorrente() {
-        return contaCorrente;
-    }
-
-    public List<Conta> getContaPoupanca() {
-        return contaPoupanca;
+    public List<Conta> getContas() {
+        return contas;
     }
 }

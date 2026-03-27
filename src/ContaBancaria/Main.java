@@ -13,10 +13,10 @@ public class Main {
         Conta poupancaAlexandre = new ContaPoupanca(alexandre);
         Conta poupancaDavi = new ContaPoupanca(davi);
 
-        banco.adicionarContaCorrente(correnteAlexandre);
-        banco.adicionarContaCorrente(correnteDavi);
-        banco.adicionarPoupanca(poupancaAlexandre);
-        banco.adicionarPoupanca(poupancaDavi);
+        banco.adicionarConta(correnteAlexandre);
+        banco.adicionarConta(correnteDavi);
+        banco.adicionarConta(poupancaAlexandre);
+        banco.adicionarConta(poupancaDavi);
 
         correnteAlexandre.depositar(500);
         correnteDavi.depositar(250);
@@ -26,8 +26,7 @@ public class Main {
         correnteAlexandre.imprimirExtrato();
         poupancaAlexandre.imprimirExtrato();
 
-        System.out.println(banco.getContaCorrente());
-        System.out.println(banco.getContaPoupanca());
+        System.out.println(banco.getContas());
     }
 }
 
