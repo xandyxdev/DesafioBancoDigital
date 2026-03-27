@@ -1,4 +1,14 @@
 package ContaBancaria;
 
-public class contaPoupança extends conta {
+public class ContaPoupanca extends Conta {
+
+    public ContaPoupanca(Clientes nome) {
+        super(nome);
+    }
+
+    @Override
+    public void imprimirExtrato() {
+        System.out.println("\n\n ***** Extrato Conta Poupança *****");
+        super.imprimirExtrato();
+    }
 }
